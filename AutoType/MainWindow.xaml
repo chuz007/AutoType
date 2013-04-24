@@ -1,0 +1,13 @@
+﻿<Window x:Class="AutoType.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="600" Width="900">
+    <Grid Width="900" Height="600">
+        <ListBox x:Name="tx_codes" HorizontalAlignment="Left" Height="461" Margin="10,23,0,0" VerticalAlignment="Top" Width="204" SelectionChanged="tx_codes_SelectionChanged"/>
+        <Button x:Name="btn_save" Content="Save" HorizontalAlignment="Left" Height="31" Margin="764,516,0,0" VerticalAlignment="Top" Width="109" Click="btn_save_Click"/>
+        <Button x:Name="btnNewCode" Content="New" HorizontalAlignment="Left" Margin="139,489,0,0" VerticalAlignment="Top" Width="75" Click="btnNewCode_Click"/>
+        <TextBox x:Name="tx_newCode" HorizontalAlignment="Left" Height="22" Margin="10,489,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124"/>
+        <TextBox x:Name="tx_message" HorizontalAlignment="Left" Height="461" Margin="234,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="621" AcceptsReturn="True" AcceptsTab="True"/>
+        <Button x:Name="btnDeleteMessage" Content="Delete Selected Code" HorizontalAlignment="Left" Margin="10,516,0,0" VerticalAlignment="Top" Width="124" Click="btnDeleteMessage_Click"/>
+    </Grid>
+</Window>

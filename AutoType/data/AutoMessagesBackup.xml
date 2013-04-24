@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<AutoMessages>
+	<Message Code="stnote">		
+		<Content>
+      Date: [[date]]
+      Hello [customer],
+      Something goes in here.
+      blablablabla
+
+      sincerely,
+
+      ------------------------------ -
+    </Content>
+	</Message>
+	<Message Code="msb">		
+		<Content>
+			Message 2
+		</Content>
+	</Message>
+  <Message Code="msc">		
+		<Content>
+			Message 3
+		</Content>
+	</Message>
+	<Message Code="004">		
+		<Content>
+			Message 4
+		</Content>
+	</Message>
+</AutoMessages>

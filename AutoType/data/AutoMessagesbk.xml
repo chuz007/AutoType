@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<AutoMessages>
+  <Message Code="stnote">New message</Message>
+  <Message Code="msb">
+    <Content>
+			Message 2
+		</Content>
+  </Message>
+  <Message Code="msc">
+    <Content>
+			Message 3
+		</Content>
+  </Message>
+  <Message Code="004">
+    <Content>
+			Message 4
+		</Content>
+  </Message>
+</AutoMessages>

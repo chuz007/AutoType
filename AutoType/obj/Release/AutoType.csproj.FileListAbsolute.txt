@@ -1,0 +1,8 @@
+C:\Users\IHC\Documents\Visual Studio 2012\Projects\AutoType\AutoType\obj\Release\AutoType.csprojResolveAssemblyReference.cache
+C:\Users\IHC\Documents\Visual Studio 2012\Projects\AutoType\AutoType\obj\Release\MainWindow.baml
+C:\Users\IHC\Documents\Visual Studio 2012\Projects\AutoType\AutoType\obj\Release\MainWindow.g.cs
+C:\Users\IHC\Documents\Visual Studio 2012\Projects\AutoType\AutoType\obj\Release\App.g.cs
+C:\Users\IHC\Documents\Visual Studio 2012\Projects\AutoType\AutoType\obj\Release\AutoType_MarkupCompile.cache
+C:\Users\IHC\Documents\Visual Studio 2012\Projects\AutoType\AutoType\obj\Release\AutoType.g.resources
+C:\Users\IHC\Documents\Visual Studio 2012\Projects\AutoType\AutoType\obj\Release\AutoType.Properties.Resources.resources
+C:\Users\IHC\Documents\Visual Studio 2012\Projects\AutoType\AutoType\obj\Release\AutoType.csproj.GenerateResource.Cache
