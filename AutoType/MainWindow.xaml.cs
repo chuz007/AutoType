@@ -30,7 +30,7 @@ namespace AutoType
         private static LowLevelKeyboardProc _proc = HookCallback;
         private static IntPtr _hookID = IntPtr.Zero;
         private static Dictionary<string, AutoMessage> messages = new Dictionary<string, AutoMessage>();
-        private static string tempInput;
+        private static string tempInput="";
         private static string[] validKeys = {"D0", "D1", "D2", "D3", "D4", "D5", "D6", "D7", "D8", "D9", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "NumPad0", "NumPad1", "NumPad2", "NumPad3", "NumPad4", "NumPad5", "NumPad6", "NumPad7", "NumPad8", "NumPad9" };
         private NotifyIcon oNotifyIcon;
         private System.Windows.Forms.ContextMenu trayIconMenu;
@@ -85,44 +85,56 @@ namespace AutoType
         private static IntPtr HookCallback(
             int nCode, IntPtr wParam, IntPtr lParam)
         {
-            if (nCode >= 0 && wParam == (IntPtr)WM_KEYDOWN)
+            try
             {
-                int vkCode = Marshal.ReadInt32(lParam);
-                string currentKey = ((Keys)vkCode).ToString();
-               if (currentKey.CompareTo("Space") == 0)
-                {                    
-                      if(messages.ContainsKey(tempInput.ToLower()))
+                if (nCode >= 0 && wParam == (IntPtr)WM_KEYDOWN)
+                {
+                    int vkCode = Marshal.ReadInt32(lParam);
+                    string currentKey = ((Keys)vkCode).ToString();
+                    if (currentKey.CompareTo("Space") == 0)
                     {
-                        string strmessage = (messages[tempInput.ToLower()]).ToString();                        
-                        string oClipData = System.Windows.Clipboard.GetText();
-                        System.Windows.Clipboard.SetText(strmessage);
-                        string deleteEntryCommand = "";
-                        for (int i = 0; i < tempInput.Length; i++)
+                        if (messages.ContainsKey(tempInput.ToLower()))
                         {
-                            deleteEntryCommand += "{BKSP}";
+                            string strmessage = (messages[tempInput.ToLower()]).ToString();
+                            string oClipData = System.Windows.Clipboard.GetText();
+                            System.Windows.Clipboard.Clear();
+                            System.Windows.Clipboard.SetText(strmessage);
+                            string deleteEntryCommand = "";
+                            for (int i = 0; i < tempInput.Length; i++)
+                            {
+                                deleteEntryCommand += "{BKSP}";
+                            }
+                            SendKeys.Flush();
+                            SendKeys.SendWait(deleteEntryCommand);
+                            SendKeys.Flush();    
+                            SendKeys.SendWait("^v");                             
+                            SendKeys.Flush();
+                            
+                            System.Windows.Clipboard.SetText(oClipData);
                         }
-                        SendKeys.SendWait(deleteEntryCommand);
-                        SendKeys.SendWait("^V");
-                        System.Windows.Clipboard.SetText(oClipData);
-                    }                    
-                    tempInput = "";
+                        tempInput = "";
+                    }
+                    else if (currentKey.CompareTo("Back") == 0)
+                    {
+                        if (tempInput.Length > 0)
+                            tempInput = tempInput.Remove(tempInput.Length - 1);
+                    }
+                    else if (!validKeys.Contains<string>(currentKey))
+                    {
+                        tempInput = "";
+                    }
+
+                    else
+                    {
+                        tempInput += currentKey[currentKey.Length - 1];
+                    }
                 }
-                else if (currentKey.CompareTo("Back") == 0)
-                {
-                    if (tempInput.Length > 0)
-                        tempInput = tempInput.Remove(tempInput.Length - 1);
-                }
-                else if (!validKeys.Contains<string>(currentKey))
-                {
-                    tempInput = "";
-                }
-                
-                else
-                {
-                    tempInput += currentKey[currentKey.Length - 1];
-                }                
-            } 
-            return CallNextHookEx(_hookID, nCode, wParam, lParam);
+                return CallNextHookEx(_hookID, nCode, wParam, lParam);
+            }
+            catch (Exception e)
+            {
+                return CallNextHookEx(_hookID, nCode, wParam, lParam);
+            }
         }
 
         private void loadCodesToListBox()

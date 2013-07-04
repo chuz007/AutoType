@@ -1,4 +1,267 @@
 <?xml version="1.0"?>
 <AutoMessages>
-  <Message Code="temp">akjdlkjasd;klfjas;lfk tjl;kajdsfkl ajsdflk;jasdf;kj </Message>
+  <Message Code="its1">
+    Intel Technical Support
+  </Message>
+  <Message Code="ts1">
+    Troubleshooting
+  </Message>
+  <Message Code="stnote">
+    Agent: CSR Christopher B. ([[date]])
+
+    ** Customer contact information: **
+    Companys Name:
+    Customers Name:
+    Phone number:
+    Email address:
+    Business ID:
+    MSP ID:
+
+    ------------------------------------------------------------------------ -
+    ** Hybrid Cloud Box Information: **
+    Server Name:
+    Hardware Vendor and model:
+    IHC Standard / BDR:
+    Rental / Lease:
+    Software stack version:
+    Software Manager UI version (3.1, 3.5, 3.7, 3.8):
+    In Production / Brand New:
+    Asset Tag:
+
+    ------------------------------------------------------------------------ -
+    ** Problem Statement / Inquiry: **
+
+    ------------------------------------------------------------------------ -
+    ** Customer troubleshooting steps: **
+
+    ------------------------------------------------------------------------ -
+    ** CSR Agent troubleshooting suggestions: **
+
+    ------------------------------------------------------------------------ -
+    ** Resolution/Next steps: **
+
+    ------------------------------------------------------------------------ -
+    ** Instructions for next agent: **
+
+  </Message>
+  <Message Code=".fae1">
+    If you are interested in obtaining this information, the only way to obtain it is to contact one of our authorized distributors and sign a Non Disclosure Agreement (NDA).  You will need to work with a Field Application Engineer (FAE) at one of our distributors.  A list of our distributors can be found at the following web site:
+
+    http://www.intel.com/cd/channel/reseller/asmo-na/eng/purchase/iad/227305.htm
+
+    Once you get to this site, select your location, then select from a list of our distributors to find one that is located in your area.
+
+    If you are outside the United States, please access the following link to find the closest authorized distributor:
+
+    http://www.intel.com/cd/channel/reseller/asmo-na/eng/46168.htm
+  </Message>
+  <Message Code="newcase">
+    customer request/agent resolution/action
+
+  </Message>
+  <Message Code=".ehm2">
+    EHM Escalation
+
+    Case number:
+    Customer Name:
+    Phone Number:
+    Escalating Agent Name and Ext: Eric Valderrama 0346
+    Product ID (PS8):
+    RMA# (if applicable):
+    Description of the issue:
+    Description of customers expectations:
+
+    Despues llamas al 866-477-7573   2278   dejas el mensaje y en PS8 escalas de esta forma
+
+    Provider Group: NAMO Escalation Handling Manager 1
+    Y lo dejas abierto a Escalated-EHM.
+
+
+
+  </Message>
+  <Message Code="closingscript">
+    oSubject : ticket #, Brief issue description
+
+
+
+    Dear Customer,
+
+
+
+    This is regarding case number : state EIM ticket #
+
+    It has been x days since the last update on this service ticket service ticket. We were hoping that you would have an update for us to continue to work on this issue. We understand that you may be busy at this time with things that are higher priority. We are proposing that we temporarily close this issue until we hear back from you. If we dont hear back from you until the end of business day tomorrow, then we will temporarily close this issue and file this in your ticket.
+
+    Please do not hesitate to contact us back if this issue becomes a priority and we would be glad to help out.
+
+    For our contact information, please see http://www.intel.com/support/progserv/appupsbs/hybrid/sb/CS-032313.htm
+
+
+    Sincerely,
+
+
+  </Message>
+  <Message Code="mailbdr">
+    Hello cust,
+
+    Thank you for contacting Intel(R) Hybrid Cloud Technical Support.
+    As per our conversation, below you can find the license for the StorageCraft Software:
+    license
+    You can find help to activate the StorageCraft license in the following document:
+    http://download.intel.com/support/progserv/appupsbs/hybrid/sb/storagecraftshadowprotectserver4licenseactivat.pdf
+    And you can find help on configuring StorageCraft as well on the following document:
+    http://www.storagecraft.com/documents/ShadowProtect-4.0-User-Guides/ShadowProtect204.020User20Guide.pdf
+
+    Please do not hesitate to contact us again if you need further assistance.
+
+    Sincerely,
+
+  </Message>
+  <Message Code="mailpatch">
+    Dear Customer,
+    Thank you once again for contacting the Intel Hybrid Cloud Platform support center.
+    In order to apply patch 3.6.1 please follow the steps below.
+    The first step:
+    -Login to www.intelhybridcloud.com and go to Management Portal. If the server has is patching option set to "manual" then click on "patch" and see if the server is showing up with the available 3.6.1 patch, select the patch and then click on confirm. If server is set to auto-download, just proceed to the point below.
+    -Login to the Hybrid Cloud Server Manager and then click on Controls, then Sync. After doing this, the server will sync with the Management Portal to download the patch and it can take a while or show up immediately, depending on the network transfer rate.
+    -To know if the patch is available to apply go to Dashboard and on the top message bar you will see a message saying: Patch 3.6.1 is available and ready to install.
+    -Then you can go to Controls and then click on Upgrade. This will close the server manager session and start installing the patch, it can take around 10 minutes to complete and it wont affect the VMs, if the server is in production this first step can be done without interrupting the server, since this is not going to turn off the server, just apply the new patch to the software stack.
+    The second step:
+    -Applying the XenTools to the Windows VMs, this will need to reboot the virtual machines and it may take around 5 minutes or less to apply.
+    -For this second step, please take a look at the PDF file where it will explain how to apply the hotfix on the VMs in the following link: http://www.intel.com/support/progserv/appupsbs/hybrid/sb/CS-033911.htm
+    Dont hesitate in getting in touch with us for further assistance; you can call us from Monday-Friday from 6:00am to 5:00pm PST to our phone # 800-404-2284.
+    http://www.intel.com/support/progserv/appupsbs/hybrid/sb/CS-032313.htm
+
+    Sincerely,
+
+
+  </Message>
+  <Message Code="mailcdr">
+    "3.1--------
+    Hello Mr. CUSTOMER,
+
+    Thank you for choosing Intel Hybrid Cloud services.
+
+    We have received noticed that your Intel Hybrid Cloud server "SERVER" is not reporting to our backend; this is something that needs to be fixed in order to ensure the continuity of your server and appliances licenses.
+    You can refer to the link below to troubleshoot this issue:
+    http://download.intel.com/support/progserv/appupsbs/hybrid/sb/usagereportfailuretroubleshooting07232012.pdf
+    If you dont find anything wrong after following the guide above, please let us know so that we can help you to find the root problem for this particular issue.
+
+    Please do not hesitate to contact us if you need further assistance, you can refer to the case number CASE NUMBER
+
+    For our contact information, please see
+
+    http://www.intel.com/support/progserv/appupsbs/hybrid/sb/CS-032313.htm
+
+
+
+    Sincerely,
+
+
+
+
+    3.7-----------
+    Hello Mr. CUSTOMER
+
+    Thank you for choosing Intel Hybrid Cloud services.
+
+    We have received noticed that your Intel Hybrid Cloud server "SERVER" is not reporting to our backend; this is something that needs to be fixed in order to ensure the continuity of your server and appliances licenses.
+    You can refer to the link below to troubleshoot this issue:
+    http://download.intel.com/support/progserv/appupsbs/hybrid/sb/msp36x37xurtroubleshootingscriptv21.pdf
+    If you dont find anything wrong after following the guide above, please let us know so that we can help you to find the root problem for this particular issue.
+
+    Please do not hesitate to contact us if you need further assistance, you can refer to the case number CASE NUMBER.
+
+    For our contact information, please see
+
+    http://www.intel.com/support/progserv/appupsbs/hybrid/sb/CS-032313.htm
+
+
+
+    Sincerely,
+
+  </Message>
+  <Message Code="intel">
+    Intel(R)
+  </Message>
+  <Message Code="mailrds">
+    Hello customer,
+
+    Thank you for contacting Intel(R) Hybrid Cloud Technical Support.
+    Before trying to install the Remote Desktop Services Application (RDS), make sure that the Windows 2008 R2 appliance has a remote interface in its configuration, you can verify this, logging into your server using the Intel Hybrid Cloud Server Manager, and going to "Appliances  Windows 2008 R2 (click on it)  Configure" and scroll down until you reach the network settings of the appliance.
+    If the appliance is missing the remote interface, please add the remote network interface (the appliance needs to be stopped in order to do this).
+    Below you can find the Installation and Activation guide for the RDS Application:
+    http://download.intel.com/support/progserv/appupsbs/hybrid/sb/remotedesktopservicesisvguide.pdf
+    **You can force your appliances and applications download, by going to "Controls  Maintenance  Sync with Web Portal" and clicking on the "Sync" button.
+    Please do not hesitate to contact us again if you need further assistance.
+    For our contact information, please see
+    http://www.intel.com/support/progserv/appupsbs/hybrid/sb/CS-032313.htm
+
+    Sincerely,
+
+  </Message>
+  <Message Code="mailreturn">
+    Hello CUSTOMER,
+
+    Thank you for contacting Intel(R) Hybrid Cloud Technical Support.
+
+    As per our conversation below you will find the return instructions.
+
+    Server Return Instructions:
+    1.     It is the responsibility of the customer to transfer and remove any personal or customer data from the server
+    2.A.       There are many backup and recovery options available.  Intel does not recommend any of the following.  These are provided as examples for reference only:
+    3.         Windows Server Backup Step-by-Step Guide for Windows Server 2008 http://technet.microsoft.com/en-us/library/cc770266(vws.10).aspx
+    4.         How to: Back Up a Database (SQL Server Management Studio)  http://msdn.microsoft.com/en-us/library/ms187510.aspx
+    5.         Understanding Backup, Restore and Disaster Recovery http://technet.microsoft.com/en-us/library/dd876874.aspx
+    6.3.      MSP should deactivate and uninstall all VMs on the box
+    7.4.      The server will immediately be de-registered and further use of the server will be prohibited. MSP is responsible for any additional usage charges incurred within the current usage period.
+    8.5.    The MSP must return the server/BDR in packaging that is appropriate for shipping to ensure that the hardware is delivered in good working condition to the following address, at their own expense, within 15 days:
+    9.A.       Attention: Intel Hybrid Cloud Returns, 1900 Prairie City Road, FM2-Data Center, Folsom CA 95630.
+    10.6.       Reply back to this email with the tracking information of the servers shipment.
+    11.7.      Please Note:
+    12.A.       If the hardware is damaged at the time of return, the MSP agrees to pay, and Intel can bill them for either, the entire retail cost of the Hardware or the cost of repair of the Hardware (if Hardware is returned damaged), whichever is less. The risk of loss or damage to the Hardware is borne by the MSP during the term of the Subscription, and until the Hardware is returned to Intel.
+    13.B.       If the server is not returned in the allotted time, the MSP will be invoiced for the entire retail cost of the Hardware.
+    14.C.       The first month rental charge is non-refundable and is used for handling, reimaging, and restocking fees, as applicable.
+    Please do not hesitate to contact us again if you need further assistance.
+
+    For our contact information, please see
+    http://www.intel.com/support/progserv/appupsbs/hybrid/sb/CS-032313.htm
+
+    Sincerely,
+
+
+  </Message>
+  <Message Code="mailreinstallapp">
+    hHello Customer,
+    Thank you for contacting the Intel Hybrid Cloud Platform support.
+    I understand you are having difficulties starting the Windows Server 2008 R2* appliance that was installed into your Intel Hybrid Cloud Server box.
+    Ill be more than glad to assist to you today.  Id like to inform to you that the situation described usually occurs due an entitlement issue with the backend server.
+    I would recommend to you performing a clean installation of the Windows Server 2008 R2* appliance into the Intel Hybrid Cloud Server box. Please follow these steps:
+    1.Launch the Intel Hybrid Cloud Server Manager Client Console
+    2.Sign into your Intel Hybrid Cloud Server box
+    3.Click on "Appliances" tab (hand left side menu)
+    4.Click on the Windows Server 2008 R2* appliance (The one you are having difficulties with)
+    5.Click on "Control" tab (middle of the window)
+    6.Click on "Uninstall appliance" button and then click on Yes to confirm the removal of the appliance
+    7.Launch a web browser and navigate to the official site: https://store.intelhybridcloud.com/
+    8.Re-order the same appliance from the Intel AppUp SMB Service Store
+    Note: Ordering the same appliance wont affect your billing since only registered and active appliances are taking into consideration for billing purposes.
+    9.After placing the purchase order, please go back to the Intel Hybrid Cloud Server Manager Client Console
+    10.Click on "Controls" tab (hand left side menu)
+    11.Scroll down to the middle and then click on "Sync" button to initiate the Sync with Web Portal
+    12.Now click again on "Appliances" tab. The appliance installation process would start within the next 5 - 10 minutes.
+    13.During the installation of the appliance, you can check the progress of the installation by hovering the mouse over the appliances icon avatar
+    14.Lastly, sign into the Intel AppUp SMB Service Web Portal to confirm the appliance is listed under your server name AppUp01: https://hybridcloud.intel.com/ManageServers.aspx
+    Please let us know if you are able to register and start the appliance after performing the above steps.
+    For further assistance, please contact us from here: http://www.intel.com/support/progserv/appupsbs/hybrid/sb/CS-032313.htm . Also, you can contact us by replying to this email message.
+    If you require more information, please do not hesitate to contact us.
+    Regards,
+  </Message>
+  <Message Code="mail1">Hello cust,
+
+    Thank you for contacting Intel(R) Hybrid Cloud Support.
+   
+    Please do not hesitate to contact us again if you need further assistance.
+
+    Sincerely,</Message>
 </AutoMessages>
